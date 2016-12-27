@@ -9,7 +9,7 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context=".MainActivity">
 
-    <com.developer110.expandablelayout.ExpandableLayout
+    <com.github.saeedjassani.ExpandableLayout
         android:id="@+id/first"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,7 +17,7 @@
         expandable:el_contentLayout="@layout/view_content"
         android:background="#e74c3c"/>
 
-    <com.developer110.expandablelayout.ExpandableLayoutListView
+    <com.github.saeedjassani.ExpandableLayoutListView
         android:id="@+id/listview"
         android:layout_below="@+id/first"
         android:layout_width="match_parent"
