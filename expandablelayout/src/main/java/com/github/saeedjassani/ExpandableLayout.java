@@ -97,7 +97,8 @@ public class ExpandableLayout extends RelativeLayout {
 						}
 					}, duration);
 				}
-				onHeaderClickListener.onClick(v);
+				if (onHeaderClickListener != null)
+					onHeaderClickListener.onClick(v);
 			}
 		});
 
