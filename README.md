@@ -3,7 +3,7 @@ ExpandableLayout
 
 ![ExpandableLayout](https://github.com/traex/ExpandableLayout/blob/master/header.png)
 
-ExpandableLayout provides an easy way to create a view called header with an expandable view. Both view are external layout to allow a maximum of customization. [You can find a sample](https://github.com/traex/ExpandableLayout/blob/master/sample/) that how to use an ExpandableLayout to your layout.
+ExpandableLayout provides an easy way to create a view called header with an expandable view. Both view are external layout to allow a maximum of customization. [You can find a sample](https://github.com/saeedjassani/ExpandableLayout/tree/master/app) that how to use an ExpandableLayout to your layout.
 
 ![ExpandableLayout GIF](https://github.com/traex/ExpandableLayout/blob/master/demo.gif)
  
