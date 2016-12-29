@@ -8,12 +8,12 @@ ExpandableLayout provides an easy way to create a view called header with an exp
 ![ExpandableLayout GIF](https://github.com/traex/ExpandableLayout/blob/master/demo.gif)
  
 ### Integration
-The lib is available on Maven Central, you can find it with [Gradle, please](http://gradleplease.appspot.com/#expandablelayout)
+The lib is available via jCentre
 
 ``` xml
 
 dependencies {
-    compile 'com.github.traex.expandablelayout:library:1.2.2'
+    compile 'com.github.saeedjassani:expandablelayout:1.0.3'
 }
 
 ``` 
@@ -26,13 +26,13 @@ Declare an ExpandableLayout inside your XML layout file. You also need to other 
 
 ``` xml
 
-  <com.andexert.expandablelayout.library.ExpandableLayout
+    <com.github.saeedjassani.ExpandableLayout
          android:id="@+id/expandableLayout"
          xmlns:expandable="http://schemas.android.com/apk/res-auto"
          android:layout_width="match_parent"
          android:layout_height="match_parent"
-         expandable:headerLayout="@layout/view_header"
-         expandable:contentLayout="@layout/view_content"/>
+         expandable:el_headerLayout="@layout/view_header"
+         expandable:el_contentLayout="@layout/view_content"/>
          
 ```
 
@@ -43,20 +43,20 @@ You can use ExapandableLayout in an `ExpandableLayoutListView` with `ExpandableL
 ExpandableLayoutItem
 ``` xml
 
-  <com.andexert.expandablelayout.library.ExpandableLayoutItem
+    <com.github.saeedjassani.ExpandableLayoutItem
          android:id="@+id/expandableLayout"
          xmlns:expandable="http://schemas.android.com/apk/res-auto"
          android:layout_width="match_parent"
          android:layout_height="match_parent"
-         expandable:headerLayout="@layout/view_header"
-         expandable:contentLayout="@layout/view_content"/>
+         expandable:el_headerLayout="@layout/view_header"
+         expandable:el_contentLayout="@layout/view_content"/>
          
 ```
 
 ExpandableLayoutListView
 ``` xml
 
-  <com.andexert.expandablelayout.library.ExpandableLayoutListView
+    <com.github.saeedjassani.ExpandableLayoutListView
          android:id="@+id/expandableLayout"
          xmlns:expandable="http://schemas.android.com/apk/res-auto"
          android:layout_width="match_parent"
@@ -81,28 +81,5 @@ If you want to use the `ExpandableLayoutListView` with EditText, you have to set
 
 Thanks to [Google](http://developer.android.com/reference/android/widget/ExpandableListView.html) for its ExpandableListview :)
 
-### MIT License
-
-```
-    The MIT License (MIT)
-    
-    Copyright (c) 2014 Robin Chutaux
-    
-    Permission is hereby granted, free of charge, to any person obtaining a copy
-    of this software and associated documentation files (the "Software"), to deal
-    in the Software without restriction, including without limitation the rights
-    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-    copies of the Software, and to permit persons to whom the Software is
-    furnished to do so, subject to the following conditions:
-    
-    The above copyright notice and this permission notice shall be included in
-    all copies or substantial portions of the Software.
-    
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-    THE SOFTWARE.
-```
+This library is actually a fork of [this library](https://github.com/traex/ExpandableLayout). All credits to the original developer.
+Since that library was not maintained, I uploaded it and will try to accept PRs.
