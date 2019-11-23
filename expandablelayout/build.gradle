@@ -1,4 +1,31 @@
 apply plugin: 'com.android.library'
+//apply plugin: 'com.jfrog.bintray'
+//apply plugin: 'com.github.dcendents.android-maven'
+
+
+//ext {
+//
+//    bintrayRepo = "ExpandableLayout"
+//    bintrayName = "com.github.saeedjassani"
+//    libraryName = "expandable-layout"
+//    publishedGroupId = bintrayName
+//    artifact = libraryName
+//
+//    libraryVersion = "1.0.4"
+//
+//    libraryDescription = 'ExpandableLayout for Android'
+//    siteUrl = 'https://github.com/saeedjassani/ExpandableLayout'
+//    gitUrl = 'https://github.com/saeedjassani/ExpandableLayout.git'
+//
+//    developerName = "Saeed Jassani"
+//    developerId = "saeedjassani"
+//    developerEmail = "saeedjassani@gmail.com"
+//    licenseName = "The Apache Software License, Version 2.0"
+//    licenseUrl = "http://www.apache.org/licenses/LICENSE-2.0.txt"
+//
+//    allLicenses = ["Apache-2.0"]
+//}
+
 
 android {
     compileSdkVersion 29
@@ -19,6 +46,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
 }
 
 dependencies {
@@ -29,5 +57,8 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.1.0'
     testImplementation 'junit:junit:4.12'
 }
+
+//apply from: 'https://raw.github.com/nuuneoi/JCenter/master/installv1.gradle'
+//apply from: 'https://raw.github.com/nuuneoi/JCenter/master/bintrayv1.gradle'
 
 apply from: 'https://raw.github.com/tingbob/gradle-jcenter-push/master/gradle-jcenter-push.gradle'
